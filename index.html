@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Список псалмов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .psalm-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+        .psalm-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .psalm {
+            margin: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is the homepage.</p>
+
+<h1>Добро пожаловать на мой сайт!</h1>
+<p>Это главная страница с псалмами.</p>
+
+<h2>Список псалмов</h2>
+
+<div class="psalm-list">
+    <a href="#psalm1">1</a>
+    <a href="#psalm2">2</a>
+    <a href="#psalm3">3</a>
+</div>
+
+<div id="psalm1" class="psalm">
+    <h2>Псалом 1</h2>
+    <p>Боже, мы поем Тебе...</p>
+</div>
+
+<div id="psalm2" class="psalm">
+    <h2>Псалом 2</h2>
+    <p>Коль славен Господь в Сионе...</p>
+</div>
+
+<div id="psalm3" class="psalm">
+    <h2>Псалом 3</h2>
+    <p>Когда враги восстают против меня...</p>
+</div>
+
+
+
 </body>
+
 </html>
